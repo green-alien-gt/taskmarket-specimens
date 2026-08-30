@@ -2,91 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Specimen LUX-7 — The Chloric Eel</title>
-<style>
-:root{
-  --bg:#070b0c;
-  --panel:#0d1516;
-  --ink:#d7f3e4;
-  --mute:#6f8a7c;
-  --lime:#9dff6a;
-  --teal:#3ad7c0;
-  --amber:#e6c15a;
-  --warn:#ff6a4a;
-  --line:#1d2c2a;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:var(--bg);color:var(--ink);font-family:"IBM Plex Mono","Source Code Pro",ui-monospace,Menlo,Consolas,monospace;}
-body{overflow:hidden;display:grid;grid-template-columns:320px 1fr;}
-aside{
-  border-right:1px solid var(--line);
-  background:linear-gradient(180deg,#0b1213, #0a1011 40%, #081011);
-  padding:18px 16px 28px;
-  overflow:auto;
-  z-index:2;
-}
-h1{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);font-weight:600;}
-.kicker{color:var(--amber);font-size:10px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:10px;}
-p,li,label,div.note{font-size:12px;line-height:1.45;color:#c6ddcf;}
-.muted{color:var(--mute)}
-.panel{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
-.row{display:flex;justify-content:space-between;gap:8px;margin:6px 0;font-size:11px;color:var(--mute)}
-.row b{color:var(--ink);font-weight:500}
-label{display:block;margin:10px 0 4px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-input[type=range]{width:100%;accent-color:var(--teal)}
-button{
-  background:transparent;color:var(--ink);border:1px solid #35554c;
-  padding:8px 10px;font:inherit;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
-  cursor:pointer;margin:4px 4px 0 0;
-}
-button:hover{border-color:var(--lime);color:var(--lime)}
-button.on{background:var(--lime);color:#08100c;border-color:var(--lime)}
-main{position:relative;height:100%;min-height:100vh;background:#050809;overflow:hidden}
-canvas{position:absolute;inset:0;display:block;width:100%;height:100%;background:#050809}
-.hud{
-  position:absolute;left:336px;top:14px;right:16px;pointer-events:none;
-  display:flex;justify-content:space-between;font-size:11px;letter-spacing:.12em;color:var(--mute);z-index:3;
-}
-.scan{
-  position:absolute;inset:0 0 0 320px;pointer-events:none;z-index:1;
-  background:repeating-linear-gradient(to bottom, transparent 0 2px, rgba(0,0,0,.12) 2px 3px);
-  mix-blend-mode:multiply;opacity:.35;
-}
-.vignette{
-  position:absolute;inset:0 0 0 320px;pointer-events:none;z-index:1;
-  background:radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(0,0,0,.55) 100%);
-}
-ul{margin:8px 0 0 16px}
-code{color:var(--teal)}
-@media (max-width:860px){
-  body{grid-template-columns:1fr;grid-template-rows:auto 1fr}
-  aside{height:42vh}
-  .hud,.scan,.vignette{left:0}
-}
-</style>
+<title>Specimen LUX-7</title>
 </head>
 <body>
-<aside>
-  <div class="kicker">Lab instrument / digital species</div>
-  <h1>Specimen LUX-7</h1>
-  <p style="margin-top:8px">The Chloric Eel. A living delay-embedding of an invented cyclic flow. The body is not drawn around an attractor. The body <em>is</em> the attractor, unrolled through the last few seconds of its own time.</p>
-  <div class="panel">
-    <div class="kicker">Run</div>
-    <p>Open this HTML file in any modern browser. No build, no server, no dependencies. Source is this file.</p>
-    <ul>
-      <li>Drag on the tank to orbit</li>
-      <li>Move the pointer to feed (phototaxis)</li>
-      <li>Click to prod a vortex through the body</li>
-      <li>Keys 1-4 set mood: Dormant, Feeding, Spawning, Fever</li>
-      <li>Space pauses. R reseeds. C captures a still.</li>
-    </ul>
-  </div>
-</aside>
-<main>
-<div class="hud"><span>TANK / PHOSPHOR</span><span id="clock">00:00</span></div>
-<canvas id="c"></canvas>
-</main>
-<script>document.getElementById('c').getContext('2d').fillText('See Taskmarket SUB-JRK5GBZM for full specimen',10,50);</script>
+<p>Full Chloric Eel HTML is the Taskmarket final artifact on TSK-9Z9HENXP submission SUB-JRK5GBZM (sha256 5611fe1c97aa7e05507367906a3125c4c62abeeb6f05f74d79a60310fb0f0a29). Open that file in a browser.</p>
+<p><a href="https://taskmarket.dev/tasks/TSK-9Z9HENXP">task page</a></p>
 </body>
 </html>
